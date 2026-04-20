@@ -1,32 +1,3 @@
-// import express from "express";
-// import { WebSocketServer } from "ws";
-
-// const app = express();
-// const PORT = 3001;
-// const server = app.listen(PORT, () => {
-//   console.log(`Server running on http://localhost:${PORT}`);
-// });
-
-// const wss = new WebSocketServer({ server });
-
-// let count = 0;
-
-// wss.on("connection", (ws) => {
-//   count++;
-
-//   wss.clients.forEach((client) => {
-//     client.send(JSON.stringify({ count }));
-//   });
-
-//   ws.on("close", () => {
-//     count--;
-
-//     wss.clients.forEach((client) => {
-//       client.send(JSON.stringify({ count }));
-//     });
-//   });
-// });
-
 import express from "express";
 import { WebSocketServer } from "ws";
 
